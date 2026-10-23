@@ -1,6 +1,6 @@
 public class Main{
     public static void main(String[] args){
-        long[] c = new long[8];
+        long[] c = new long[(18-4)/2+1];
         for (int i = 0; i <= c.length-1; i++){
             c[i] = (9-i)*2;
         }
