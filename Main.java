@@ -14,7 +14,7 @@ public class Main{
     }
 
     public static void createMatrix(long[] c, double[] x){
-        double[][] b = new double[8][13];
+        double[][] b = new double[c.length][x.length];
         for (int i = 0; i<=c.length-1; i++){
             for (int j = 0; j <= x.length-1; j++){
                 if (c[i] == 14L){
@@ -38,8 +38,8 @@ public class Main{
     }
 
     public static void printMatrix(double[][] matrix){
-        for (int i = 0; i<= 7; i++){
-            for (int j = 0; j<= 12; j++){
+        for (int i = 0; i< matrix.length; i++){
+            for (int j = 0; j< matrix[i].length; j++){
                 System.out.printf("%7.2f ", matrix[i][j]);
             }
             System.out.println();
